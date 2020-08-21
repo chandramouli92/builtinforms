@@ -91,11 +91,11 @@ def builtinforms(request):
             birth_month=form.cleaned_data.get('birth_month')
             birth_year=form.cleaned_data.get('birth_year')
             gender=form.cleaned_data.get('gender')
-            image=form.cleaned_data.get('image')
-            store_image(image)
+            #image=form.cleaned_data.get('image')
+            #store_image(image)
             data=form.cleaned_data
+            
             return render(request,"display_data.html",context=data)
-
     
 
     form=forms.SampleForms()
